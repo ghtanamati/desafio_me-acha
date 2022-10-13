@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+    <title>Me Acha</title>
+</head>
+<body>
+    <header class="flex">
+        <h1>ME ACHA!</h1>
+        <h2>ENCONTRE UM ENDEREÇO PELO NÚMERO DE CEP</h2>
+        <span class="material-symbols-outlined">travel_explore</span>
+    </header>
+
+    <main class="flex">
+        <form method="get" name="cadastro" class="flex">
+            <legend class="flex">CEP</legend>
+            <input type="text" name="numeroCep" placeholder="Digite um CEP" id="numeroCep">
+
+            <input type="submit" name="buscar" id="buscar" value="BUSCAR">
+
+            <legend class="flex">Rua</legend>
+            <input type="text" name="logradouro" id="logradouro" disabled>
+
+            <legend class="flex">Bairro</legend>
+            <input type="text" name="bairro" id="bairro" disabled>
+
+            <legend class="flex">Cidade</legend>
+            <input type="text" name="localidade" id="localidade" disabled>
+
+            <legend class="flex">Estado</legend>
+            <input type="text" name="uf" id="uf" disabled>
+        </form>
+    </main>
+    
+    <footer></footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
